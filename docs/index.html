@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="ja">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | NukoDash!</title>
+    <title>NukoDash!</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
@@ -23,6 +23,18 @@
         <div id="unity-build-title">NukoDash!</div>
       </div>
     </div>
+
+    <fotter class = "iPadExplain">
+      <!-- Cursed Code??? -->
+      <!----><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><!---->
+      <span class = "centering_item">
+        <h3>iPadOSでのフルスクリーン操作について</h3>
+        <p>フルスクリーン状態で操作していると<b>「フルスクリーンでタイプ入力しているようです」</b>という警告が表示されることがあります。</p>
+        <p>操作方法にもよりますがこの警告は高頻度で表示されてしまいますので、iPadOSでのフルスクリーン操作は使用しない事をおすすめします。</p>
+        <p>また、このサイトが個人情報などを不正に引き出す事はありません。</p>
+      </span>
+    </fotter>
+
     <script>
       var container = document.querySelector("#unity-container");
       var canvas = document.querySelector("#unity-canvas");
@@ -80,7 +92,8 @@
         // Avoid draining fillrate performance on mobile devices,
         // and default/override low DPI mode on mobile browsers.
         config.devicePixelRatio = 1;
-        unityShowBanner('WebGL builds are not supported on mobile devices.');
+        // unityShowBanner('WebGL builds are not supported on mobile devices.');
+        unityShowBanner('起動しない場合はページの再読み込みをお試しください。');
       } else {
         canvas.style.width = "960px";
         canvas.style.height = "600px";
@@ -103,5 +116,7 @@
       };
       document.body.appendChild(script);
     </script>
+
+
   </body>
 </html>
