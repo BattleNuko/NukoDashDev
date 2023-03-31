@@ -16,3 +16,7 @@ body { padding: 0; margin: 0 }
 #unity-warning { position: absolute; left: 50%; top: 5%; transform: translate(-50%); background: white; padding: 10px; display: none }
 
 #nuko-sl { width: 128px; height: 128px; background: url('NukoSlWhite.png') no-repeat center }
+
+.share_button{ position: relative; top: 800px; font-family: 'Kosugi Maru', sans-serif; z-index: -1024; text-align: center;}
+.ipad_explain{ position: relative; top: 800px; font-family: 'Kosugi Maru', sans-serif; z-index: -1024; }
+.centering_item{ text-align: center;}
