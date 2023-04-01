@@ -4,16 +4,18 @@ body {
     background-image: url('NukoBg.png');
 }
 
+/*
 @media (orientation: portrait){
-    /*.unity-mobile {
+    .unity-mobile {
         transform: rotate(90deg);
         transform-origin: center;
-    }*/
+    }
     #unity-container {
         transform: rotate(90deg);
         transform-origin: center;
     }
 }
+*/
 
 #unity-container { 
     position: absolute 
