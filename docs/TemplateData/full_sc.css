@@ -4,38 +4,57 @@ body {
     background-image: url('NukoBg.png');
 }
 
+@media (orientation: portrait){
+    /*.unity-mobile {
+        transform: rotate(90deg);
+        transform-origin: center;
+    }*/
+    #unity-container {
+        transform: rotate(90deg);
+        transform-origin: center;
+    }
+}
+
 #unity-container { 
     position: absolute 
 }
 
+/*
 #unity-container.unity-desktop { 
     left: 50%; 
     top: 65%; 
     transform: translate(-50%, -50%) 
 }
+*/
 
-/*
 #unity-container.unity-mobile { 
     width: 100%; 
     height: 100% 
 }
-*/
 
 #unity-canvas { 
     background: #231F20 
 }
 
-/*
 .unity-mobile #unity-canvas { 
-    width: 100%; 
-    height: 100% 
+    width: 100%;
+    height: 100%; 
+}
+
+/*
+@media (orientation: portrait){
+    .unity-mobile #unity-canvas {
+        width: 100vh!important;
+        height:100vw!important;
+    }
 }
 */
+
 
 #unity-loading-bar { 
     position: absolute; 
     left: 50%; 
-    top: 40%; 
+    top: 50%; 
     transform: translate(-50%, -50%); 
     display: none 
 }
@@ -64,11 +83,11 @@ body {
     position: relative 
 }
 
-/*
+/* フッタ非表示 */
 .unity-mobile #unity-footer { 
     display: none 
 }
-*/
+
 #unity-webgl-logo { 
     float:left; 
     width: 204px; 
@@ -134,7 +153,7 @@ body {
 .align_left{ 
     position: relative; 
     font-family: 'Kosugi Maru', sans-serif; 
-    margin: 50px 7%; 
+    margin: 50px 100px; 
     text-align: left;
 }
 
