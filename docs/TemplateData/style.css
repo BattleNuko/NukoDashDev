@@ -170,7 +170,14 @@ body {
 .back_button_center{ 
     position: relative; 
     font-family: 'Kosugi Maru', sans-serif; 
-    margin: 100px; 
+    margin: 70px; 
+    text-align: center;
+}
+
+.back_button_center_help{ 
+    position: relative; 
+    font-family: 'Kosugi Maru', sans-serif; 
+    margin: 0 70px 70px 70px; 
     text-align: center;
 }
 
