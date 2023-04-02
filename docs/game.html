@@ -91,6 +91,7 @@
         // and default/override low DPI mode on mobile browsers.
         config.devicePixelRatio = 1;
         unityShowBanner('このページでは端末を横向きにしてお楽しみください。');
+        config.matchWebGLToCanvasSize = false;
       } else {
         // 強制的に全画面モードに変更
         container.className = "unity-mobile";
