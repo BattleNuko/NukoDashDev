@@ -23,7 +23,9 @@
         </div>
       </div>
       <div id="unity-warning"></div>
-      <div id="unity-footer"></div>
+      <div id="unity-footer">
+        <div id="unity-fullscreen-button"></div>
+      </div>
     </div>
 
 
@@ -88,7 +90,7 @@
         // Avoid draining fillrate performance on mobile devices,
         // and default/override low DPI mode on mobile browsers.
         config.devicePixelRatio = 1;
-        unityShowBanner('起動しない場合はページの再読み込みをお試しください。/ このページでは端末を横向きにしてお楽しみください。 ');
+        unityShowBanner('このページでは端末を横向きにしてお楽しみください。');
       } else {
         // 強制的に全画面モードに変更
         container.className = "unity-mobile";

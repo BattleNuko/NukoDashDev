@@ -50,10 +50,15 @@
         </div>
         <!--iPad向け-->
         <div class = "ipad_notice">
-          <h3>iPadOSでのフルスクリーン操作について (PC版サイトのみ)</h3>
-          <p>フルスクリーン状態で操作していると<span class="font_blue">「フルスクリーンでタイプ入力しているようです」</span>という警告が表示されることがあります。</p>
-          <p>この警告はかなり頻繁に表示されてしまいますので、iPadOSでのフルスクリーン操作は使用しない事をおすすめします。</p>
+          <h3><div class="head_sub">iPadOSでのフルスクリーン操作について</div></h3>
+          <p><img src="TemplateData/fullscreen-button.png" width="20" height="20" alt="フルスクリーンボタン">を押してフルスクリーン状態で操作していると
+            <span class="font_blue">「フルスクリーンでタイプ入力しているようです」</span>
+          </p>
+          <p>という警告が表示されることがあります。</p>
+          <p>操作方法にもよりますがこの警告はかなり頻繁に表示されてしまいますので、iPadOSでフルスクリーン操作を使用する場合は
+          <p>上記「全画面表示」ボタンより全画面ページを利用して頂くようお願いします。</p>
           <p>また、このサイトが個人情報などを不正に引き出す事はありません。</p>
+          <br>
           <br>
         </div>
       </div>
@@ -117,11 +122,12 @@
       // config.matchWebGLToCanvasSize = false;
 
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
-        container.className = "unity-mobile";
+        // container.className = "unity-mobile";
+        container.className = "unity-desktop";
         // Avoid draining fillrate performance on mobile devices,
         // and default/override low DPI mode on mobile browsers.
         config.devicePixelRatio = 1;
-        unityShowBanner('起動しない場合はページの再読み込みをお試しください。/ このページでは端末を横向きにしてお楽しみください。 ');
+        unityShowBanner('このページでは端末を横向きにしてお楽しみください。');
       } else {
         canvas.style.width = "960px";
         canvas.style.height = "600px";
